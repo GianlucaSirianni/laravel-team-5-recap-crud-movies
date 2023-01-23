@@ -15,7 +15,7 @@ class MoviesSeeder extends Seeder
     {
         for($i=0; $i<10; $i++){
             $newMovie = new Movies();
-            $newMovie -> title=$faker ->name();
+            $newMovie ->title=$faker ->name();
             $newMovie -> description=$faker ->words(5, true);
             $newMovie -> year=$faker ->year();
             $newMovie ->save();
